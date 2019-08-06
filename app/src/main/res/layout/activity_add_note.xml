@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:orientation="vertical"
+    android:padding="12dp"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"
+        android:id="@+id/title"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="date"
+        android:id="@+id/date"
+        android:padding="10dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spinner"
+        android:padding="8dp"
+        android:id="@+id/priority"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/spinner"
+        android:entries="@array/priority_array"        >
+
+    </Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:id="@+id/desc"
+        android:lines="5"
+        android:gravity="start"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:hint="save"
+        android:maxLines="5"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+
+</LinearLayout>
