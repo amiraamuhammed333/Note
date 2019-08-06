@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onItemClick(int pos, Note noteContent) {
 
-                Intent intent =new Intent (MainActivity.this ,AddNoteActivity.class );
+                Intent intent =new Intent (MainActivity.this ,NoteContentActivity.class );
 
                 // intent.putExtra ( "position",pos );
                 intent.putExtra("title" , noteContent.getTitle());

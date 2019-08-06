@@ -64,7 +64,7 @@ public class AddNoteActivity extends AppCompatActivity implements OnClickListene
             Note note = new Note ( sTitle, sDetails, sDate, priority );
             NoteDataBase.getInstance ( this )
                     .noteDAO ()
-                    .inserNote ( note );
+                    .insertNote ( note );
 
 
             setAlarmOfNote(hour,min);
